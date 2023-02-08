@@ -31,3 +31,17 @@
 # (*) Примечание.
 # Подумайте о том какие структуры данных здесь наиболее удобно использовать,
 # чтобы просто проверять в какую группу попадает буква, а также просто накапливать сумму очков.
+
+dict_en = {"AEIOULNSTR": 1, "DG": 2, "BCMP": 3, "FHVWY": 4, "K": 5, "JX": 8, "QZ": 10}
+dict_rus = {"АВЕИНОРСТ": 1, "ДКЛМПУ": 2, "БГЁЬЯ": 3, "ЙЫ": 4, "ЖЗХЦЧ": 5, "ШЭЮ": 8, "ФЩЪ": 10}
+word = input()
+sum = 0
+for el in word:
+    for key, val in dict_en.items():
+        if el.upper() in key:
+            sum += val
+    else:
+        for key1, val1 in dict_rus.items():
+            if el.upper() in key1:
+                sum += val1
+print(sum)
