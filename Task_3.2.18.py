@@ -6,3 +6,8 @@
 # Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 0
 # Output: 2
 # Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 9
+
+list_1 = [10, 5, 7, 3, 3, 2, 5, 7, 3, 8]
+x = int(input())
+for idx, el in list_1.enumerete():
+    print(idx, el)
