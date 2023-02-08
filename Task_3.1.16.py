@@ -14,7 +14,6 @@
 
 list1 = [10,5,7,3,3,0,5,7,2,8]
 x = int(input())
-
 for i in range(len(list1)):
     if x == i or x != i:
         print(list1.count(x) or "-1")
